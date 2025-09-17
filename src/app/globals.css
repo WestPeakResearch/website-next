@@ -5,18 +5,18 @@
 }
 
 @theme inline {
-  --color-primary-background: var(--color-);
+  --color-primary: var(--color-white);
   --color-primary-foreground: var(--color-black);
 
-  --color-secondary-background: var(--color-wp-blue);
+  --color-secondary: var(--color-wp-blue);
   --color-secondary-foreground: var(--color-white);
 
-  --color-tertiary-background: var(--color-gray-300);
+  --color-tertiary: var(--color-gray-50);
   --color-tertiary-foreground: var(--color-wp-blue);
 }
 
 body {
-  background: var(--color-primary-background);
+  background: var(--color-primary);
   color: var(--color-primary-foreground);
   font-family:
     "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
