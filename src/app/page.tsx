@@ -1,5 +1,6 @@
 import {Section} from "@/system/Section/Section";
 import {Text} from "@/system/Text/Text";
+import lionsgate from "@/images/backgrounds/lionsgate.jpg";
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
       </Section>
-      <Section>
+      <Section color="secondary" backgroundImage={lionsgate} darkenBackground>
         <Text variant="title">Another section</Text>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
