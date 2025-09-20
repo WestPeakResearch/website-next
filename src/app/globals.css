@@ -4,6 +4,10 @@
   --color-wp-blue: #0a233d;
 }
 
+@theme {
+  --spacing-navbar-height: 80px;
+}
+
 @theme inline {
   --color-primary: var(--color-white);
   --color-primary-foreground: var(--color-black);

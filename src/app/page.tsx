@@ -1,11 +1,20 @@
 import {Section} from "@/system/Section/Section";
 import {Text} from "@/system/Text/Text";
 import lionsgate from "@/images/backgrounds/lionsgate.jpg";
+import peak from "@/images/backgrounds/peak.jpg";
 import {VStack} from "@/system/VStack/VStack";
+import {Hero} from "@/system/Hero/Hero";
 
 export default function Home() {
   return (
     <div>
+      <Hero
+        title="WestPeak Research Association"
+        subtitle="The University of British Columbia's premier student led capital markets and finance club."
+        backgroundImage={peak}
+        height="400px"
+        long
+      />
       <Section>
         <VStack>
           <div>
