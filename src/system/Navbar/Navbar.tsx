@@ -14,7 +14,7 @@ const ListLink = (props: ListLinkProps) => (
   <li>
     <Link
       href={props.href}
-      className="uppercase font-bold text-lg md:text-xl text-white hover:text-[#a5cbf1]"
+      className="uppercase font-bold text-white hover:text-[#a5cbf1]"
     >
       {props.children}
     </Link>
@@ -38,12 +38,17 @@ function MinimalBar(props: {show: boolean; onClick: () => void}) {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-secondary h-20 flex items-center justify-between px-4 md:hidden">
-        <div className="flex items-center">
+      <div className="flex justify-between py-2">
+        <div className="w-24 shrink-0 mb-0.5">
           <a href="/">
             <Image src={logo} alt="logo" height={96} width={96} />
           </a>
         </div>
-      <button onClick={props.onClick} className="text-white text-lg font-bold uppercase hover:text-[#a5cbf1] cursor-pointer">
+      </div>
+      <button
+        onClick={props.onClick}
+        className="text-white text-xl font-bold uppercase hover:text-[#a5cbf1] cursor-pointer"
+      >
         <span>Menu</span>
       </button>
     </div>
@@ -71,11 +76,13 @@ function NavMobileMenu(props: {show: boolean; onClick: () => void}) {
   if (!props.show) return null;
 
   return (
-    <div className="fixed top-0 left-0 w-full h-screen z-50 bg-secondary flex flex-col p-6 md:hidden">
-      <button onClick={props.onClick} className="self-end cursor-pointer">
-        <Image src={CloseIcon} alt="close" width={24} height={24} />
-      </button>
-      <div className="flex flex-col items-center">
+    <div className="fixed top-0 left-0 w-full h-[80%] z-50 bg-secondary flex flex-col md:hidden">
+        <div className="flex justify-end px-5 pt-5">
+            <button onClick={props.onClick} className="cursor-pointer">
+                <Image src={CloseIcon} alt="close" width={24} height={24} />
+            </button>
+        </div>
+      <div onClick={props.onClick} className="flex flex-col items-center text-2xl leading-10">
         <Links />
       </div>
     </div>
