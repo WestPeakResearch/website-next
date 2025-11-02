@@ -4,6 +4,7 @@ import lionsgate from "@/images/backgrounds/lionsgate.jpg";
 import peak from "@/images/backgrounds/peak.jpg";
 import {VStack} from "@/system/VStack/VStack";
 import {Hero} from "@/system/Hero/Hero";
+import LinkButton from "@/system/LinkButton/LinkButton";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </Text>
+          <LinkButton href="/about-us">View Research</LinkButton>
+          <LinkButton href="/about-us" disabled>View Research</LinkButton>
         </VStack>
       </Section>
       <Section>
