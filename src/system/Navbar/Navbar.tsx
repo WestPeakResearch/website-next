@@ -76,7 +76,7 @@ function NavMobileMenu(props: {show: boolean; onClick: () => void}) {
   if (!props.show) return null;
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[80%] z-50 bg-secondary flex flex-col md:hidden">
+    <div className="fixed top-0 left-0 w-full h-[85%] z-50 bg-secondary flex flex-col md:hidden">
         <div className="flex justify-end px-5 pt-5">
             <button onClick={props.onClick} className="cursor-pointer">
                 <Image src={CloseIcon} alt="close" width={24} height={24} />
